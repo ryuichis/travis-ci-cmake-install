@@ -12,9 +12,9 @@ before_install:
 - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
     sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y;
     sudo apt-get update -q;
-    cmake --version
+    cmake --version;
   else
-    cmake --version
+    cmake --version;
   fi
   
 script:
